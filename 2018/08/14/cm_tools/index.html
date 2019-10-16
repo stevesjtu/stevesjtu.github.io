@@ -55,28 +55,35 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="相对速度">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="仿真计算中的计算多体动力学是一门古老而新兴的学科，古老是因为理论基本采用了200多年前的分析力学基础，新兴是因为需要结合计算机技术来实现。因其需要推导大量公式和编写繁琐的程序而深受广大同学的喜爱，于是乎有同学因彻夜疯狂调试程序几近走火入魔。为避免大家为科学而献身，有必要在此记录些许以供参考，如有新的建议可以发起Issues或者Pull requests。 1 准备工作 工欲善其事，必先利其器。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算力学研究工具">
+<meta property="og:url" content="http://yoursite.com/2018/08/14/cm_tools/index.html">
 <meta property="og:site_name" content="相对速度">
+<meta property="og:description" content="仿真计算中的计算多体动力学是一门古老而新兴的学科，古老是因为理论基本采用了200多年前的分析力学基础，新兴是因为需要结合计算机技术来实现。因其需要推导大量公式和编写繁琐的程序而深受广大同学的喜爱，于是乎有同学因彻夜疯狂调试程序几近走火入魔。为避免大家为科学而献身，有必要在此记录些许以供参考，如有新的建议可以发起Issues或者Pull requests。 1 准备工作 工欲善其事，必先利其器。">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://latex.codecogs.com/gif.latex?\begin{bmatrix}&space;A_{11}&space;&A_{12}&space;&A_{13}&space;&A_{14}&space;\\&space;A_{21}&space;&A_{22}&space;&A_{23}&space;&A_{24}&space;\\&space;A_{31}&space;&A_{32}&space;&A_{33}&space;&A_{34}&space;\end{bmatrix}">
+<meta property="og:image" content="http://yoursite.com/2018/08/14/cm_tools/cm_tools/git_flow.png">
+<meta property="og:updated_time" content="2019-10-16T15:34:27.759Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="相对速度">
-  <link rel="canonical" href="http://yoursite.com/">
+<meta name="twitter:title" content="计算力学研究工具">
+<meta name="twitter:description" content="仿真计算中的计算多体动力学是一门古老而新兴的学科，古老是因为理论基本采用了200多年前的分析力学基础，新兴是因为需要结合计算机技术来实现。因其需要推导大量公式和编写繁琐的程序而深受广大同学的喜爱，于是乎有同学因彻夜疯狂调试程序几近走火入魔。为避免大家为科学而献身，有必要在此记录些许以供参考，如有新的建议可以发起Issues或者Pull requests。 1 准备工作 工欲善其事，必先利其器。">
+<meta name="twitter:image" content="https://latex.codecogs.com/gif.latex?\begin{bmatrix}&space;A_{11}&space;&A_{12}&space;&A_{13}&space;&A_{14}&space;\\&space;A_{21}&space;&A_{22}&space;&A_{23}&space;&A_{24}&space;\\&space;A_{31}&space;&A_{32}&space;&A_{33}&space;&A_{34}&space;\end{bmatrix}">
+  <link rel="canonical" href="http://yoursite.com/2018/08/14/cm_tools/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false,
+    isHome: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>相对速度</title>
+  <title>计算力学研究工具 | 相对速度</title>
   
 
 
@@ -189,203 +196,10 @@
             
 
   <div class="posts-expand">
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/14/multibody_codes/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="xiangduisudu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="相对速度">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            
-            <a href="/2019/10/14/multibody_codes/" class="post-title-link" itemprop="url">多体代码不完整汇总</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              
-                
-              
-
-              <time title="Created: 2019-10-14 22:33:49" itemprop="dateCreated datePublished" datetime="2019-10-14T22:33:49+08:00">2019-10-14</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-10-16 23:25:21" itemprop="dateModified" datetime="2019-10-16T23:25:21+08:00">2019-10-16</time>
-              </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
       
-          <p>多体动力学通常建立如下的第一类拉格朗日方程</p>
-<script type="math/tex; mode=display">
-\begin{aligned}
-\boldsymbol M \ddot{\boldsymbol q} + \boldsymbol{\varPhi}_q^\text{T}\boldsymbol\lambda &= \boldsymbol Q\\
-\boldsymbol{\varPhi} &= \boldsymbol 0
-\end{aligned}</script><p>针对不同刚度类型的系统，针对不同拓扑结构，采用不同方法建立了上述方程，并引入若干数值方法求解上述方程。这个过程中涌现了多种多体动力学代码/软件。这些代码/软件不仅可以减少研究人员的负担，而且可以加速多体动力学的发展。</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th style="text-align:center">类型</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="http://www.mscsoftware.com/zh-hans/product/adams" target="_blank" rel="noopener">Adams</a></td>
-<td style="text-align:center">闭源独立软件</td>
-<td>世界上使用最多的机械系统仿真分析软件</td>
-</tr>
-<tr>
-<td><a href="https://www.avl.com/excite" target="_blank" rel="noopener">AVL EXCITE</a></td>
-<td style="text-align:center">闭源独立软件</td>
-<td>针对动力传动系统的多体动力学仿真软件</td>
-</tr>
-<tr>
-<td><a href="http://bulletphysics.org/wordpress" target="_blank" rel="noopener">Bullet</a></td>
-<td style="text-align:center">开源物理引擎</td>
-<td>柔性多体动力学的跨平台开源物理引擎</td>
-</tr>
-<tr>
-<td><a href="https://projectchrono.org/" target="_blank" rel="noopener">Chrono</a></td>
-<td style="text-align:center">开源代码/软件</td>
-<td>用于车辆、机器人和其他机械系统的多物理场仿真系统</td>
-</tr>
-<tr>
-<td><a href="http://www.havok.com/" target="_blank" rel="noopener">Havok</a></td>
-<td style="text-align:center">闭源物理引擎</td>
-<td>用于计算机图形和游戏的动力学物理引擎</td>
-</tr>
-<tr>
-<td><a href="https://www.plm.automation.siemens.com/en_us/products/lms/virtual-lab/motion/index.shtml" target="_blank" rel="noopener">LMS Virtual.Lab Motion</a></td>
-<td style="text-align:center">闭源独立软件</td>
-<td>多体动力学分析优化软件</td>
-</tr>
-<tr>
-<td><a href="http://www.maplesoft.com/products/maplesim/index1.aspx" target="_blank" rel="noopener">MapleSim</a></td>
-<td style="text-align:center">闭源独立软件</td>
-<td>结合物理模型和符号计算的高精度多体仿真软件</td>
-</tr>
-<tr>
-<td><a href="https://www.mbsim-env.de/mbsim/html/" target="_blank" rel="noopener">MBSim</a></td>
-<td style="text-align:center">开源代码</td>
-<td>机械系统的多体动力学仿真环境</td>
-</tr>
-<tr>
-<td><a href="http://www.itm.uni-stuttgart.de/research/neweul/neweul_en.php" target="_blank" rel="noopener">Neweul-M$^2$</a></td>
-<td style="text-align:center">闭源软件模块</td>
-<td>机械系统的柔性多体动力学仿真</td>
-</tr>
-<tr>
-<td><a href="http://newtondynamics.com/forum/newton.php" target="_blank" rel="noopener">Newton Dynamics</a></td>
-<td style="text-align:center">开源物理引擎</td>
-<td>跨平台物理仿真库</td>
-</tr>
-<tr>
-<td><a href="https://bitbucket.org/odedevs/ode" target="_blank" rel="noopener">ODE</a></td>
-<td style="text-align:center">开源物理引擎</td>
-<td>基于互补接触方法的多刚体动力学代码</td>
-</tr>
-<tr>
-<td><a href="http://www.geforce.com/hardware/technology/physx" target="_blank" rel="noopener">PhysX</a></td>
-<td style="text-align:center">闭源物理引擎</td>
-<td>用于计算机图形的高速物理引擎</td>
-</tr>
-<tr>
-<td><a href="https://rbdl.bitbucket.io/" target="_blank" rel="noopener">RBDL</a></td>
-<td style="text-align:center">开源代码</td>
-<td>求解多刚体动力学正问题和逆问题的代码</td>
-</tr>
-<tr>
-<td><a href="http://eng.functionbay.co.kr/" target="_blank" rel="noopener">RecurDyn</a></td>
-<td style="text-align:center">闭源独立软件</td>
-<td>基于相对坐标和递归算法的多体动力学系统仿真软件</td>
-</tr>
-<tr>
-<td><a href="http://siconos.gforge.inria.fr/4.1.0/html/index.html" target="_blank" rel="noopener">Siconos</a></td>
-<td style="text-align:center">开源代码</td>
-<td>软件 &amp; 求解非光滑动力学系统的仿真框架</td>
-</tr>
-<tr>
-<td><a href="https://simtk.org/projects/simbody" target="_blank" rel="noopener">Simbody</a></td>
-<td style="text-align:center">开源代码/软件</td>
-<td>机械系统和生物力学的高性能多体动力学和多物理场仿真库</td>
-</tr>
-<tr>
-<td><a href="http://www.simpack.com/" target="_blank" rel="noopener">Simpack</a></td>
-<td style="text-align:center">闭源仿真软件</td>
-<td>用于任何机械或机电系统的动态分析的通用多体仿真软件</td>
-</tr>
-<tr>
-<td><a href="https://cn.mathworks.com/products/simmechanics.html" target="_blank" rel="noopener">Simscape Multibody</a></td>
-<td style="text-align:center">闭源软件模块</td>
-<td>三维机械系统的多体动力学仿真环境</td>
-</tr>
-<tr>
-<td><a href="http://parmes.org/solfec/" target="_blank" rel="noopener">Solfec</a></td>
-<td style="text-align:center">开源代码</td>
-<td>非光滑接触动力学方法柔性多体动力学仿真代码</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>其中闭源独立软件一般由商业公司开发，为工业界提供分析和仿真的支持，也为学术界提供参考。开源代码/软件一般由学术机构或个人研究者发起，并将原始代码发布到开源代码托管平台如 <a href="https://github.com/" target="_blank" rel="noopener">Github</a> 或 <a href="https://bitbucket.org/" target="_blank" rel="noopener">Bitbucket</a>上，通过与其他学者进行讨论和分享代码来更新代码/软件。软件模块一般是通用的计算平台下的部分模块，专门用于多体动力学的分析和计算。物理引擎指对真实物理世界的模拟的计算库，虽然一般用于游戏和计算机图形学，但所用的理论也属于多体动力学。由于需要高效的实时仿真，物理引擎一般借用计算力学原理，对模型进行必要的简化，也对算法进行高度的优化。</p>
-
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
   
   
-  
-
-    
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/14/cm_tools/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -400,8 +214,9 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
+            计算力学研究工具
             
-            <a href="/2018/08/14/cm_tools/" class="post-title-link" itemprop="url">计算力学研究工具</a>
+
           
         </h1>
 
@@ -443,7 +258,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>仿真计算中的计算多体动力学是一门古老而新兴的学科，古老是因为理论基本采用了200多年前的分析力学基础，新兴是因为需要结合计算机技术来实现。因其需要推导大量公式和编写繁琐的程序而深受广大同学的喜爱，于是乎有同学因彻夜疯狂调试程序几近走火入魔。为避免大家为科学而献身，有必要在此记录些许以供参考，如有新的建议可以发起<code>Issues</code>或者<code>Pull requests</code>。</p>
+        <p>仿真计算中的计算多体动力学是一门古老而新兴的学科，古老是因为理论基本采用了200多年前的分析力学基础，新兴是因为需要结合计算机技术来实现。因其需要推导大量公式和编写繁琐的程序而深受广大同学的喜爱，于是乎有同学因彻夜疯狂调试程序几近走火入魔。为避免大家为科学而献身，有必要在此记录些许以供参考，如有新的建议可以发起<code>Issues</code>或者<code>Pull requests</code>。</p>
 <h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h3><blockquote>
 <p>工欲善其事，必先利其器。</p>
 </blockquote>
@@ -500,26 +315,42 @@
 <p>以上工具皆免费，说了这么多目的为了同学们能不假思索地选择效率最高的工具，而不是饶了一圈回来发现工具太落后，浪费了大量精力。</p>
 <p>希望能有帮助。</p>
 
-        
-      
     </div>
 
     
     
     
+        
+      
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2019/10/14/multibody_codes/" rel="prev" title="多体代码不完整汇总">
+                  多体代码不完整汇总 <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
       </footer>
+    
   </article>
   
   
   
 
-    
   </div>
-
-  
-
 
 
           </div>
@@ -536,6 +367,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -548,6 +384,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-准备工作"><span class="nav-number">1.</span> <span class="nav-text">1 准备工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-日常工具"><span class="nav-number">2.</span> <span class="nav-text">2 日常工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-Mendeley-Endnote"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 Mendeley/Endnote</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-5-LaTeX"><span class="nav-number">2.2.</span> <span class="nav-text">2.5 $\LaTeX$</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-Sublime-Visual-Studio-Code"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 Sublime Visual Studio Code</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-Git-GitHub-Bitbucket-SourceTree"><span class="nav-number">2.4.</span> <span class="nav-text">2.4 Git/GitHub/Bitbucket/SourceTree</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-7-Matlab"><span class="nav-number">2.5.</span> <span class="nav-text">2.7 Matlab</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-编程工具"><span class="nav-number">3.</span> <span class="nav-text">3 编程工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-Visual-Studio"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 Visual Studio</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-Clion"><span class="nav-number">3.2.</span> <span class="nav-text">3.3 Clion</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-Intel-Compiler"><span class="nav-number">3.3.</span> <span class="nav-text">3.2 Intel Compiler</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-5-Windows-Subsystem-for-Linux"><span class="nav-number">3.4.</span> <span class="nav-text">3.5 Windows Subsystem for Linux</span></a></li></ol></li></ol></div>
+        
       </div>
       <!--/noindex-->
 
@@ -655,14 +493,6 @@
 
   
 
-  
-    
-      
-        
-      
-    
-      
-    
   
     
       

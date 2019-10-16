@@ -55,17 +55,17 @@
   };
 </script>
 
-  <meta name="description" content="部分多体代码汇总 \begin{aligned} \boldsymbol M \ddot{\boldsymbol q} + \boldsymbol{\varPhi}_q^\text{T}\boldsymbol\lambda &amp;= \boldsymbol Q\\ \boldsymbol{\varPhi} &amp;= \boldsymbol 0 \end{aligned}    名称 类型 描述     A">
+  <meta name="description" content="多体动力学通常建立如下的第一类拉格朗日方程  \begin{aligned} \boldsymbol M \ddot{\boldsymbol q} + \boldsymbol{\varPhi}_q^\text{T}\boldsymbol\lambda &amp;= \boldsymbol Q\\ \boldsymbol{\varPhi} &amp;= \boldsymbol 0 \end{aligned}针对不同">
 <meta property="og:type" content="article">
-<meta property="og:title" content="多体动力学代码">
+<meta property="og:title" content="多体代码不完整汇总">
 <meta property="og:url" content="http://yoursite.com/2019/10/14/multibody_codes/index.html">
 <meta property="og:site_name" content="相对速度">
-<meta property="og:description" content="部分多体代码汇总 \begin{aligned} \boldsymbol M \ddot{\boldsymbol q} + \boldsymbol{\varPhi}_q^\text{T}\boldsymbol\lambda &amp;= \boldsymbol Q\\ \boldsymbol{\varPhi} &amp;= \boldsymbol 0 \end{aligned}    名称 类型 描述     A">
+<meta property="og:description" content="多体动力学通常建立如下的第一类拉格朗日方程  \begin{aligned} \boldsymbol M \ddot{\boldsymbol q} + \boldsymbol{\varPhi}_q^\text{T}\boldsymbol\lambda &amp;= \boldsymbol Q\\ \boldsymbol{\varPhi} &amp;= \boldsymbol 0 \end{aligned}针对不同">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-15T15:29:01.320Z">
+<meta property="og:updated_time" content="2019-10-16T15:25:21.140Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="多体动力学代码">
-<meta name="twitter:description" content="部分多体代码汇总 \begin{aligned} \boldsymbol M \ddot{\boldsymbol q} + \boldsymbol{\varPhi}_q^\text{T}\boldsymbol\lambda &amp;= \boldsymbol Q\\ \boldsymbol{\varPhi} &amp;= \boldsymbol 0 \end{aligned}    名称 类型 描述     A">
+<meta name="twitter:title" content="多体代码不完整汇总">
+<meta name="twitter:description" content="多体动力学通常建立如下的第一类拉格朗日方程  \begin{aligned} \boldsymbol M \ddot{\boldsymbol q} + \boldsymbol{\varPhi}_q^\text{T}\boldsymbol\lambda &amp;= \boldsymbol Q\\ \boldsymbol{\varPhi} &amp;= \boldsymbol 0 \end{aligned}针对不同">
   <link rel="canonical" href="http://yoursite.com/2019/10/14/multibody_codes/">
 
 
@@ -80,7 +80,7 @@
   };
 </script>
 
-  <title>多体动力学代码 | 相对速度</title>
+  <title>多体代码不完整汇总 | 相对速度</title>
   
 
 
@@ -211,7 +211,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            多体动力学代码
+            多体代码不完整汇总
             
 
           
@@ -239,7 +239,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-10-15 23:29:01" itemprop="dateModified" datetime="2019-10-15T23:29:01+08:00">2019-10-15</time>
+                <time title="Modified: 2019-10-16 23:25:21" itemprop="dateModified" datetime="2019-10-16T23:25:21+08:00">2019-10-16</time>
               </span>
             
           
@@ -255,11 +255,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="部分多体代码汇总"><a href="#部分多体代码汇总" class="headerlink" title="部分多体代码汇总"></a>部分多体代码汇总</h2><script type="math/tex; mode=display">
+        <p>多体动力学通常建立如下的第一类拉格朗日方程</p>
+<script type="math/tex; mode=display">
 \begin{aligned}
 \boldsymbol M \ddot{\boldsymbol q} + \boldsymbol{\varPhi}_q^\text{T}\boldsymbol\lambda &= \boldsymbol Q\\
 \boldsymbol{\varPhi} &= \boldsymbol 0
-\end{aligned}</script><div class="table-container">
+\end{aligned}</script><p>针对不同刚度类型的系统，针对不同拓扑结构，采用不同方法建立了上述方程，并引入若干数值方法求解上述方程。这个过程中涌现了多种多体动力学代码/软件。这些代码/软件不仅可以减少研究人员的负担，而且可以加速多体动力学的发展。</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -367,6 +369,7 @@
 </tbody>
 </table>
 </div>
+<p>其中闭源独立软件一般由商业公司开发，为工业界提供分析和仿真的支持，也为学术界提供参考。开源代码/软件一般由学术机构或个人研究者发起，并将原始代码发布到开源代码托管平台如 <a href="https://github.com/" target="_blank" rel="noopener">Github</a> 或 <a href="https://bitbucket.org/" target="_blank" rel="noopener">Bitbucket</a>上，通过与其他学者进行讨论和分享代码来更新代码/软件。软件模块一般是通用的计算平台下的部分模块，专门用于多体动力学的分析和计算。物理引擎指对真实物理世界的模拟的计算库，虽然一般用于游戏和计算机图形学，但所用的理论也属于多体动力学。由于需要高效的实时仿真，物理引擎一般借用计算力学原理，对模型进行必要的简化，也对算法进行高度的优化。</p>
 
     </div>
 
@@ -380,6 +383,22 @@
 
         
 
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2018/08/14/cm_tools/" rel="next" title="计算力学研究工具">
+                  <i class="fa fa-chevron-left"></i> 计算力学研究工具
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
+        
       </footer>
     
   </article>
@@ -421,8 +440,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#部分多体代码汇总"><span class="nav-number">1.</span> <span class="nav-text">部分多体代码汇总</span></a></li></ol></div>
-        
       </div>
       <!--/noindex-->
 
@@ -437,7 +454,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
